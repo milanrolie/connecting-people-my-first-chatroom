@@ -1,0 +1,154 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  min-height: 100vh;
+  min-width: 100vw;
+  /* background: rgb(239, 238, 238); */
+  background: #e0e0e0;
+
+  animation: movement 30s ease infinite alternate-reverse;
+}
+
+@keyframes movement {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 20rem;
+  height: 30rem;
+  /* background: rgb(239, 238, 238); */
+  background: #e0e0e0;
+  border-radius: 15px;
+  background: #e0e0e0;
+  box-shadow:  10px 10px 20px #c5c5c5,
+               -10px -10px 20px #fbfbfb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  position: absolute;  
+  top: 10%;
+  margin: 0;
+  padding: 0;
+  padding-top: 1rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+
+
+section ul {
+  margin: 0;
+  padding: 0.2em;
+  padding-top: 10px;
+  list-style-type: none;
+  flex-grow: 2;
+  width: 18em;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+}
+
+section ul > li {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  background-color: rgb(54, 137, 238);
+  width: max-content;
+  max-width: 85%;
+  border-radius: 10px;
+  font-size: 1.5em;
+  margin-top: 2%;
+  color: antiquewhite;
+  background: #3689ee;
+  box-shadow: inset 4px 4px 8px #2e74ca,
+            inset -4px -4px 8px #3e9eff;
+
+}
+
+section form {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  width: 18rem;
+  height: 2rem;
+  position: relative;
+  display: flex;
+}
+
+section form input[type='text'] {
+  margin: 0;
+  padding: 0 1rem;
+  border: none;
+  height: 2rem;
+  flex-grow: 2;
+  border-radius: 5px;
+  background: #e0e0e0;
+  box-shadow: inset 10px 10px 20px #c5c5c5,
+              inset -10px -10px 20px #fbfbfb;
+  border: 0;
+  opacity: 80%;
+  outline: none;
+}
+
+section form > button {
+  padding: 0 0.6rem 0 0.4rem;
+  position: absolute;
+  right: 0;
+  top: 30%;
+  width: 2rem;
+  border: 0;
+  opacity: 80%;
+  outline: none;
+  transition: 0.2s;
+  background-color: #c5c5c500;
+  cursor: pointer;
+  color: #7f7f7f;
+}
+
+section form > button span {
+  display: none;
+}
+
+section form > button::after {
+  content: '►';
+}
+
+section form > button:hover {
+  padding-left: 10px;
+  color: rgb(54, 137, 238);
+}
+
+section form > button:active {
+  padding-left: 10px;
+}
