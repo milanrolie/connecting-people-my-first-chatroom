@@ -29,7 +29,7 @@ Hierdoor kan iedereen de inhoud van de website bekijken en gebruiken maar voor g
 <h4>Tools</h4>
 <ul>
         <li> 🖥️ Visual Studio Code</li>
-        <li> 🖥️ Cyclic </li>
+        <li> 🖥️ Adaptable </li>
         <li> 🖥️ Arc </li>
 </ul>
 
@@ -39,9 +39,9 @@ Hierdoor kan iedereen de inhoud van de website bekijken en gebruiken maar voor g
         <li>🎨 CSS</li>
         <li>🕹️ JavaScript</li>
         <li>🥜 Node </li>
-  </ul>      
+        <li> Adaptable </li>
 
-_Dit projects is gemaakt door Sanne, Thomas en Milan._
+  </ul>      
 
 ## Licentie
 
